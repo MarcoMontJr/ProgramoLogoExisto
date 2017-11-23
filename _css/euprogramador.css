@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h1{
+	font-family: Dungeon, sans-serif;
+	color: silver;
+	font-size: 15pt;
+	text-shadow: 7px 7px 7px rgba(0,0,0,.6);
+}
+p{
+	text-align: justify;
+	text-indent: 50px;
+	font-family: Dungeon;
+	font-size: 10.5pt; 
+}

@@ -1,0 +1,15 @@
+/*Css do form do meu site*/
+@charset "UTF-8";
+
+input, textarea{
+	font-family: Dungeon, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+input:hover, textarea:hover{
+	background-color: lightgrey;	
+	}
+legend{
+	font-family: Dungeon;
+	font-size: 11pt;	
+	}
