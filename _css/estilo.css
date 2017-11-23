@@ -1,198 +1,234 @@
 @charset "utf-8";
-@font-face{
-	font-family: 'FonteLogo';
-	src: url("../_fonts/computer-font.ttf");
-	}
-@font-face{
-	font-family: 'FonteSubTt';
-	src: url("../_fonts/IamMonotonous1.ttf");
-	}
-body{
-	background-color: #DDDDDD;
-	font-family:''
-	}
-div#interface{
-	background-color: #243F8A; 
-	margin: -20px auto 0px auto;
-	width: 1106px;	
-	box-shadow: 10px 10px 100px black;
-	padding: 10px;
-	}
-p{
-	text-align: justify;
-	text-indent: 50px;
-	font-family: Dungeon;
-	font-size: 10.5pt; 
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/computer-font.ttf");
 }
 
-header#cabecalho img#icone{
-	position: absolute;
-	left: 1000px;
-	top: 30px;	
-	}
-header#cabecalho{
-	border-bottom: 1px #0087ab double;
-	height: 100px;
-	}
-header#cabecalho h1{
-	font-family: 'FonteLogo', sans-serif;
-	font-size: 40pt;
-	color: silver;
-	text-shadow: 7px 7px 7px rgba(0,0,0,.6);
-	padding: 0px;	
-	margin-bottom: 0px;
-	}
-header#cabecalho h2{
-	font-family: 'FonteSubTt', sans-serif;
-	font-size: 13pt;
-	color: silver;
-	text-shadow: 4px 4px 4px rgba(0,0,0,.6);	
-	padding: 0px;
-	margin-top: 0px;
-	}
-figure.foto-legenda{
-	width: 20%;
-	padding: 2px;
-	}
-figure.foto-legenda figcaption{
-	opacity: 0;	
-	position: absolute;
-	top: 317px;
-	background-color: rgba(0,0,0,.4);
-	color: white;
-	width: 16.6%;
-	height: 34%;
-	padding: 25px;
-	box-sizing: border-box;
-	transition: opacity 1s;
-	}
-figure.foto-legenda h3{
-	margin-left: 15px;
-	text-indent: 0px;
-	text-align: justify;
-	font-family: Dungeon;
-	font-size: 9pt; 
-	}
-figure.foto-legenda p{	
-	margin-left: 50px;
-	text-indent: 1px;
-	text-align: justify;
-	font-family: Dungeon;
-	font-size: 10pt;
-	}
-figure.foto-legenda:hover figcaption{
-	opacity: 1;
-	}
-figure.foto-legenda a:hover{
-	color: silver;	
-	transition: 1s;	
-	text-decoration: none;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);
-	}
-nav#menu{
-	display: block;	
-	font-family: Dungeon;
-	border-bottom: 1px #0087ab double; 	
-	}
-nav#menu ul{
-	list-style: none;
-	}
-nav#menu li{
-	display: inline-block;	
-	margin: 0px;
-	padding: 0px;
-	-webkit-transition: background-color 1s;
-	-moz-transition: background-color 1s;
-	-ms-transition: background-color 1s;
-	-o-transition: background-color 1s;
-	transition: background-color 1s;
-	text-indent: 65px;
-	}
-nav#menu h1{
-	display: none;		
-	}
+@font-face {
+    font-family: 'FonteSubTt';
+    src: url("../_fonts/IamMonotonous1.ttf");
+}
+
+body {
+    background-color: #DDDDDD;
+    font-family: ''
+}
+
+div#interface {
+    background-color: #243F8A;
+    margin: -20px auto 0px auto;
+    width: 1106px;
+    box-shadow: 10px 10px 100px black;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Dungeon';
+    font-size: 11pt;
+    color: white;
+}
+
+.PrincipalBar {
+    font-family: 'FonteLogo';
+    color: silver;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #0087ab double;
+    height: 100px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 40pt;
+    color: silver;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'FonteSubTt', sans-serif;
+    font-size: 13pt;
+    color: silver;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-top: 0px;
+}
+
+figure.foto-legenda {
+    width: 20%;
+    padding: 2px;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 317px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 16.6%;
+    height: 34%;
+    padding: 25px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda h3 {
+    margin-left: 15px;
+    text-indent: 0px;
+    text-align: justify;
+    font-family: Dungeon;
+    font-size: 9pt;
+}
+
+figure.foto-legenda p {
+    margin-left: 50px;
+    text-indent: 1px;
+    text-align: justify;
+    font-family: Dungeon;
+    font-size: 10pt;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+figure.foto-legenda a:hover {
+    color: silver;
+    transition: 1s;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+nav#menu {
+    display: block;
+    font-family: Dungeon;
+    border-bottom: 1px #0087ab double;
+    padding-left: 10%;
+}
+
+nav#menu ul {
+    list-style: none;
+}
+
+nav#menu li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    text-indent: 65px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
 nav#menu a {
-	color: silver;	
-	text-decoration: none;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);	
-	}
-nav#menu a:hover { 
-	color: #0087ab;	
-	text-shadow: 5px 5px 5px rgba(0,0,0,.6);
-	transition: 1s;	
-	}
-section#corpo{
-	display: block;	
-	width: 700px;
-	float: left;
-	border-right: 1px #0087ab double;
-	padding-right: 75px;
-	}
-article#noticia-principal h2{
-	font-family: Dungeon;
-	font-size: 15pt;
-	color: silver;
-	padding: 5px 0px 5px 0px;
-	margin: 10px;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);
-	
-	}
-header#cabecalho-artigo h1{
-	font-family: Dungeon;
-	font-size: 12pt;
-	color: silver;
-	margin-top: 0px;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);
-	}
-aside#lateral{
-	display: block;
-	width: 300px;
-	float: right;
-	}
-h1{
-	font-family: Pixel Technology;
-	font-size: 15pt;
-	color: silver;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);	
-	}
-h2{
-	font-family: Dungeon;
-	font-size: 8pt;
-	color: silver;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);	
-	}
-h3{
-	font-family: Dungeon;
-	font-size: 8pt;
-	color: silver;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);
+    color: silver;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
 }
-h4{
-	font-family: Dungeon;
-	font-size: 8pt;
-	color: silver;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);	
+
+nav#menu a:hover {
+    color: #0087ab;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+    transition: 1s;
 }
-h5{
-	font-family: Dungeon;
-	font-size: 8pt;
-	color: silver;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);	
-	
-	}
-footer#rodape{
-	clear: both;
-	border-top: 1px #0087ab double;	
-	text-shadow: 1px 1px 1px rgba(0,0,0,.6);	
-	}
-footer#rodape p{
-	text-align: center;
-	font-family: Dungeon;
-	color: silver;
-	}
-footer#rodape a:hover{
-	color: silver;	
-	transition: 1s;	
-	text-decoration: none;
-	text-shadow: 3px 3px 3px rgba(0,0,0,.6);		
-	}
+
+section#corpo {
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px #0087ab double;
+    padding-right: 75px;
+}
+
+article#noticia-principal h2 {
+    font-family: Dungeon;
+    font-size: 15pt;
+    color: silver;
+    padding: 5px 0px 5px 0px;
+    margin: 10px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+header#cabecalho-artigo h1 {
+    font-family: Dungeon;
+    font-size: 12pt;
+    color: silver;
+    margin-top: 0px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+aside#lateral {
+    display: block;
+    width: 300px;
+    float: right;
+}
+
+h1 {
+    font-family: Pixel Technology;
+    font-size: 15pt;
+    color: silver;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+h2 {
+    font-family: Dungeon;
+    font-size: 8pt;
+    color: silver;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+h3 {
+    font-family: Dungeon;
+    font-size: 8pt;
+    color: silver;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+h4 {
+    font-family: Dungeon;
+    font-size: 8pt;
+    color: silver;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+h5 {
+    font-family: Dungeon;
+    font-size: 8pt;
+    color: silver;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px #0087ab double;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+
+footer#rodape p {
+    text-align: center;
+    font-family: Dungeon;
+    color: silver;
+}
+
+footer#rodape a:hover {
+    color: silver;
+    transition: 1s;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .6);
+}
